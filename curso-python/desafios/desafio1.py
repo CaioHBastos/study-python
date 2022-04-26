@@ -11,7 +11,8 @@ nome = 'Caio'
 idade = 25
 altura = 1.70
 peso = 70
-data_nascimento = 2022 - idade
+ano_atual = 2022
+data_nascimento = ano_atual - idade
 imc = peso / (altura ** 2)
 
 print(f'{nome} tem {idade} anos, {altura} de altura e pesa {peso}Kg.')
