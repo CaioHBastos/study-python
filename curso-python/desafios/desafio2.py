@@ -19,7 +19,7 @@ except:
 Faça um programa que pergunte a hora ao usuario e, baseando-se no horário descrito, exiba a saudação apropriada. 
 Ex: Bom dia 0-11, Boa tarde 12-17 e Boa noite 18-23
 """
-hora = input("Qual a hora no momento (arredondando)? ")
+hora = input("Qual um horario (0 - 23)? ")
 
 try:
     hora = int(hora)
@@ -30,6 +30,8 @@ try:
         print('Boa tarde 12-17')
     elif 18 <= hora <= 23:
         print('Boa noite 18-23')
+    else:
+        print('O Horário deve estar entre 0 e 23')
 except:
     print('Não é um horário válido, precisa ser um número inteiro.')
 
