@@ -23,6 +23,7 @@ while True:
         print(f'UHUUUUL, aletra "{letra}" existe na palavra secreta.')
     else:
         print(f'Afffzzz: a letra "{letra}" NÃO EXISTE na palavra secreta.')
+        print('Dica: "Tem cheiro no ar"')
         digitadas.pop()
 
     secreto_temporario = ''
@@ -36,7 +37,7 @@ while True:
         print(f'QUE LEGAL, VOCE GANHOU !!!!! A palavra era {secreto_temporario}')
         break
     else:
-        print(f'A palavra secreta estáa ssim: {secreto_temporario}')
+        print(f'A palavra secreta estáa assim: {secreto_temporario}')
 
     if letra not in secreto:
         chances -= 1
